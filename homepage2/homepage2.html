@@ -10,45 +10,85 @@
 </head>
 <body>
 <!-- 상단 바--> 
-
-<!---------- Top Header HTML Code Starts --------->
+<!-- Top Header HTML Code Starts -->
 <nav class="nav">
   <div class="nav-links">
     <ul>
       <i class="uil uil-times navCloseBtn"></i>
-      <li><a href="#"><i  class="fa fa-home"></i>Home</a></li>
-      <li><a href="#"><i class="fa fa-fire"></i>Services</a></li>
-      <li><a href="#"><i class="fa fa-book"></i>Products</a></li>
-      <li><a href="#"><i class="fa fa-user"></i>About Us</a></li>
-      <li><a href="#"><i class="fa fa-envelope"></i>Contact Us</a></li>
+      <li><a href="home.html"><i  class="fa fa-home"></i>Home</a></li>
+      <li><a href="service.html"><i class="fa fa-fire"></i>Services</a></li>
+      <li><a href="homepage2.html"><i class="fa fa-book"></i>Products</a></li>
+      <li><a href="about.html"><i class="fa fa-user"></i>About Us</a></li>
+      <li><a href="contact.html"><i class="fa fa-envelope"></i>Contact Us</a></li>
     </ul>
   </div>
+</nav>
 
-<!---------- Top Header HTML Code Ends --------->
+<!-- Top Header HTML Code Ends -->
 
 <!-- 상품 화면-->
 <div class="containers">
   <div class="product">
     <div class="gallery">
-        <img src="https://media.istockphoto.com/id/910127132/photo/cantaloupe-melon.jpg?s=612x612&w=0&k=20&c=6ZEbJTksIL7xwwLyop99fhhxCQK8-f368GrUjlECfkw=">
+        <img src="https://media.istockphoto.com/id/910127132/photo/cantaloupe-melon.jpg?s=612x612&w=0&k=20&c=6ZEbJTksIL7xwwLyop99fhhxCQK8-f368GrUjlECfkw=" id = "productImg ">
+        <div class = "controls">
+          <span class = "btn active"></span>
+          <span class = "btn"></span>
+          <span class = "btn"></span>
+        </div>
     </div>
     <div class="details">
-        <h1>맛있는 메론</h1>
-        <h2>15000원</h2>
-        <h3>10% 할인</h3>
-        <p>농가에서 직접 기른 맛있는 고당도 메론이 마침내 쇼핑몰에 등장!</p>
+        <h1>편안한 티셔츠</h1>
+        <h2><del>50000원</del>-> 45000원</h2>
+        <h3>10% 할인 중</h3>
+        <p>집과 밖 모두에서 입을 수 있는 편안한 셔츠</p>
+
         <form>
           <div class ="size-select">
             <p>크기</p>
             <label for = "small">
               <input type = "radio" name = "size" id="small">
-              <span>소</span>
+              <span>S</span>
+            </label>
+            <label for = "medium">
+              <input type = "radio" name = "size" id="medium">
+              <span>M</span>
             </label>
             <label for = "large">
               <input type = "radio" name = "size" id="large">
-              <span>대(+2000원)</span>
+              <span>L</span>
+            </label>
+            <label for = "X_large">
+              <input type = "radio" name = "size" id="X_large">
+              <span>XL</span>
             </label>
           </div>
+
+          <div class = "color-select">
+            <p>색깔</p>
+            <label for = "red">
+              <input type = "radio" name = "color" id = "red">
+              <span class = "color-1"></span>
+            </label>
+            <label for = "grey">
+              <input type = "radio" name = "color" id = "grey">
+              <span class = "color-2"></span>
+            </label>
+            <label for = "black">
+              <input type = "radio" name = "color" id = "black">
+              <span class = "color-3"></span>
+            </label>
+            <label for = "blue">
+              <input type = "radio" name = "color" id = "blue">
+              <span class = "color-4"></span>
+            </label>
+          </div>
+
+          <div class = "quantity-select">
+            <p>수량</p>
+            <input type = "number" value="1">
+          </div>
+            <button type="button" onclick="location.href = 'payment.html';">구매하기</button>
         </form>
     </div>
   </div>
@@ -134,3 +174,40 @@
     
       </div>
 </div>
+
+<script>
+  let productImg = document.getElementById("productImg");
+  let btn = document.getElementsByClassName("");
+
+  btn[0].onclick = function() {
+    productImg.src = "";
+
+    for(bt of btn)
+    {
+      bt.classList.remove("active");
+    }
+    this.classList.add("active");
+  }
+
+  btn[1].onclick = function() {
+    productImg.src = "image/shirts2.png";
+
+    for(bt of btn)  
+    {
+      bt.classList.remove("active");
+    }
+    this.classList.add("active");
+  }
+
+  btn[2].onclick = function() {
+    productImg.src = "image/shirts3.png";
+
+    for(bt of btn)
+    {
+      bt.classList.remove("active");
+    }
+    this.classList.add("active");
+  } 
+</script>
+</body>
+</html>

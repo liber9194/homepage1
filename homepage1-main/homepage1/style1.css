@@ -161,6 +161,33 @@ body {
     border-color: red;
   }
 
+  .board_wrap {
+    width: 70%;
+    min-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .board_title {
+    padding: 0.6rem;
+    width: 30.5%;
+    min-width: 14rem;
+    min-height: 4.5rem;
+    border-radius: 0.3rem;
+  }
+
+  .board_block_an {
+    background-color: coral;
+    font-size: 25px;
+    color: white;
+  }
+
+  .board_block {
+    background-color: white;
+    font-size: 25px;
+  }
+
   form {
     margin: 0px;
     font-size: 15px;
@@ -243,22 +270,18 @@ body {
     height: 7erm;
     width: 100erm;
   }
-  
+
+  .contact {
+    text-align: center;
+  }
+
   #map {
     position : absolute;
-  }
-  
-  #map .title {
-    text-align: center;
   }
   
   #media {
     position : absolute;
     right : 100px;
-  }
-  
-  #media .title {
-    text-align: center;
   }
 
   .content {
@@ -267,11 +290,11 @@ body {
   }
 
   .icon {
-	background-color: white;
-	border-radius: 30px;
-	padding: 15px;
-	vertical-align: top;
-}
+    background-color: white;
+    border-radius: 30px;
+    padding: 15px;
+    vertical-align: top;
+  }
 
 .contact-info {
 	display: inline-block;
@@ -284,4 +307,46 @@ body {
 
 .col-1 {
 	width: 530px;
+}
+
+.contact-info-title {
+	color: #01bdd4;
+}
+
+.form-row {
+	padding-bottom: 30px;
+}
+
+.form-field {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #000;
+}
+
+@media all and (max-width: 1024px) {
+	.container {
+		width: auto;
+		padding: 30px;
+	}
+	 .col-1 {
+		width: 360px;
+	} 
+}
+
+@media all and (max-width: 700px) {
+	.content {
+		display: block;
+	}
+	.col-2 {
+		margin-top: 40px;
+	} 
+	.col-1{
+	width:100%;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.container {
+		padding: 10px;
+	}
 }

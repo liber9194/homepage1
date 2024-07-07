@@ -1,0 +1,333 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  border: 0;
+  margin : 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  background : white;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.nav {
+  background: #fff;
+  min-height: 59px;
+  overflow: auto;
+}
+
+.nav .nav-links {
+  float : left;
+  margin-left: 1em;
+}
+
+ul{
+  list-style: none;
+}
+
+.nav .nav-links li {
+  float:left;
+}
+
+a{
+  display:block;
+  padding: 17px 20px;
+  line-height: 30px;
+  color : #191919;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav .nav-links a:hover{
+  background: #99ccff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: black;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.amount {
+  float : right;
+  color : grey;
+} 
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+.containers {
+  width: 100%;
+  min-height: 100vh;
+  background: #d0eaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  width: 90;
+  max-width: 750px;
+  display: flex;
+}
+
+.gallery {
+  flex-basis: 47%;
+  background: black;
+  transform: scale(1.08);
+  box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+  padding-top: 100px;
+}
+
+.details{
+  flex-basis: 53%;
+  background: #fff;
+  padding: 40px;
+  padding-left: 60px;
+  box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  font-size : 13px;
+  font-weight: 500;
+  color : #777;
+}
+
+.details h1 {
+  color : black;
+  font-size: 35px;
+}
+
+.details h2 {
+  color : green;
+  font-size : 30px;
+  font-weight: 600;
+}
+
+.details h3 {
+  color : rgb(154, 111, 224);
+}
+
+.details form {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.form size-select{
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.size-select {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.size-select p{
+  width: 70px;
+}
+
+.size-select input:checked + span {
+  color : blue;
+  font-weight: 600;
+}
+
+.size-select span{
+  padding: 5px;
+  margin-right: 10px;
+  cursor :pointer;
+}
+
+.color-select {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.color-select p{
+  width: 75px;
+}
+
+.color-select span{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.color-select input{
+  display: none;
+}
+
+.color-1 {
+  background-color: red;
+}
+
+.color-2 {
+  background-color: black;
+}
+
+.color-3 {
+  background-color: grey;
+}
+
+.color-4 {
+  background-color: blue;
+}
+
+.color-select input:checked + span {
+  transform: scale(0.7);
+  box-shadow: 0 0 0 4px #fff, 0 0 0 4pax #000;
+}
+
+.quantity-select {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.quantity-select p{
+  width: 75px;
+}
+
+.quantity-select input{
+  background: #eee;
+  border: 0;
+  outline: 0;
+  padding: 2px 2px 2px 15px;
+  width : 50px;
+  border-radius: 12px;
+}
+
+form button{
+  background: #553ff0;
+  color: #fff;
+  font-size: 17px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border : 0;
+  outline : 0;
+  margin-top : 50px;
+  box-shadow: 0 10px 10px rgba(85, 63, blue, alpha);
+  cursor : pointer;
+}
+
+.controls {
+  position : absolute;
+  bottom : 40px;
+  right : 20px;
+}
+
+.btn{
+  display: block;
+  width : 10px;
+  height : 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  margin : 10px;
+  cursor : pointer;
+}
+
+.btn.active{
+  background: #553ff0;
+}

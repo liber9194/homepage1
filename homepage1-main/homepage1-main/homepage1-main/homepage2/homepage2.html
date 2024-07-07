@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<title>김대환 홈페이지2</title>
+</head>
+<body>
+<!-- 상단 바--> 
+<div class = "title_logo">
+  <a href = "#" class="logo"><img src= "https://static.vecteezy.com/system/resources/thumbnails/001/504/962/small/shopping-cart-icon-free-vector.jpg">DH MALL</a>
+</div>
+<!-- Top Header HTML Code Starts -->
+<nav class="nav">
+  <div class="nav-links">
+    <ul>
+      <i class="uil uil-times navCloseBtn"></i>
+      <li><a href="home.html"><i  class="fa fa-home"></i>Home</a></li>
+      <li><a href="service.html"><i class="fa fa-fire"></i>Services</a></li>
+      <li><a href="homepage2.html"><i class="fa fa-book"></i>Products</a></li>
+      <li><a href="about.html"><i class="fa fa-user"></i>About Us</a></li>
+      <li><a href="contact.html"><i class="fa fa-envelope"></i>Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Top Header HTML Code Ends -->
+
+<!-- 상품 화면-->
+<div class="containers">
+  <div class="product">
+    <div class="gallery">
+        <img src="https://mockups-design.com/wp-content/uploads/2021/08/Hanging_T-Shirt_Mockup_2.jpg" id = "productImg ">
+        <div class = "controls">
+          <span class = "btn active"></span>
+          <span class = "btn"></span>
+          <span class = "btn"></span>
+        </div>
+    </div>
+    <div class="details">
+        <h1>편안한 티셔츠</h1>
+        <h2><del>50000원</del>-> 45000원</h2>
+        <h3>10% 할인 중</h3>
+        <p>집과 밖 모두에서 입을 수 있는 편안한 셔츠</p>
+
+        <form>
+          <div class ="size-select">
+            <p>크기</p>
+            <label for = "small">
+              <input type = "radio" name = "size" id="small">
+              <span>S</span>
+            </label>
+            <label for = "medium">
+              <input type = "radio" name = "size" id="medium">
+              <span>M</span>
+            </label>
+            <label for = "large">
+              <input type = "radio" name = "size" id="large">
+              <span>L</span>
+            </label>
+            <label for = "X_large">
+              <input type = "radio" name = "size" id="X_large">
+              <span>XL</span>
+            </label>
+          </div>
+
+          <div class = "color-select">
+            <p>색깔</p>
+            <label for = "red">
+              <input type = "radio" name = "color" id = "red">
+              <span class = "color-1"></span>
+            </label>
+            <label for = "grey">
+              <input type = "radio" name = "color" id = "grey">
+              <span class = "color-2"></span>
+            </label>
+            <label for = "black">
+              <input type = "radio" name = "color" id = "black">
+              <span class = "color-3"></span>
+            </label>
+            <label for = "blue">
+              <input type = "radio" name = "color" id = "blue">
+              <span class = "color-4"></span>
+            </label>
+          </div>
+
+          <div class = "quantity-select">
+            <p>수량</p>
+            <input type = "number" value="1">
+          </div>
+            <button type="button" onclick="location.href = 'payment.html';">구매하기</button>
+        </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- 결제 페이지-->
+<!--<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>배송 주소</h3>
+            <label for="fname"><i class="fa fa-user"></i> 이름</label>
+            <input type="text" id="fname" name="firstname" placeholder="김대환">
+            <label for="email"><i class="fa fa-envelope"></i> 이메일</label>
+            <input type="text" id="email" name="email" placeholder="example@salesforce.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> 주소</label>
+            <input type="text" id="adr" name="address" placeholder="서울특별시 ">
+            <label for="city"><i class="fa fa-institution"></i> 세부 주소</label>
+            <input type="text" id="city" name="city" placeholder="XX구 XX로">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">기타 주소</label>
+                <input type="text" id="state" name="state" placeholder="101동 504호 ">
+              </div>
+              <div class="col-50">
+                <label for="zip">우편번호</label>
+                <input type="text" id="zip" name="zip" placeholder="00001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>지불 수단</h3>
+            <label for="fname">사용 가능한 카드</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">카드명</label>
+            <input type="text" id="cname" name="cardname" placeholder="선호하는 카드">
+            <label for="ccnum">카드번호</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">만료월</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="07">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">만료연</label>
+                <input type="text" id="expyear" name="expyear" placeholder="25">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> 배송지와 결제 주소가 동일합니다.
+        </label>
+        <input type="submit" value="결제하기" class="btn">
+      </form>
+      </div>
+      <br>
+
+      <div class="col-50">
+        <div class="container">
+          <h4>장바구니 <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>3</b></span></h4>
+          <p><a href="#">Item 1</a> <span class="price">$105</span> <span class="amount">1개</span></p>
+          <p><a href="#">Item 2</a> <span class="price">$95</span> <span class="amount">1개</p>
+          <p><a href="#">Item 3</a> <span class="price">$100</span> <span class="amount">1개</p>
+          <hr>
+          <p>총 금액 <span class="price" style="color:black"><b>40000원</b></span></p>
+        </div>
+      </div>
+    
+      </div>
+</div>-->
+
+<script>
+  let productImg = document.getElementById("productImg");
+  let btn = document.getElementsByClassName("");
+
+  btn[0].onclick = function() {
+    productImg.src = "";
+
+    for(bt of btn)
+    {
+      bt.classList.remove("active");
+    }
+    this.classList.add("active");
+  }
+
+  btn[1].onclick = function() {
+    productImg.src = "image/shirts2.png";
+
+    for(bt of btn)  
+    {
+      bt.classList.remove("active");
+    }
+    this.classList.add("active");
+  }
+
+  btn[2].onclick = function() {
+    productImg.src = "image/shirts3.png";
+
+    for(bt of btn)
+    {
+      bt.classList.remove("active");
+    }
+    this.classList.add("active");
+  } 
+</script>
+</body>
+</html>

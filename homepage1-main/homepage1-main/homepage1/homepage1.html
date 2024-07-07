@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://img.freepik.com/free-vector/prickly-juniper-branch-beige-gray-minimal-background_53876-113047.jpg?w=1380&t=st=1719654384~exp=1719654984~hmac=dafb56c30f1a21ce82f9643aaa1a0fdc53e92e213f6607bcddf8ef5dafafe9e1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width : 15px;
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid;
+  border-radius: 5px;
+  background: rgb(202, 202, 197);
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 5px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+  font-weight: bold ;
+}
+
+.front_page {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.welcome .hello{
+  font-size: 5em;
+}
+
+.main_date .title{
+  text-align: center;
+  color: #fff;
+  width: 18rem;
+  background: #000;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  font-family: "notosans_jp_700", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-weight: 700;
+}
+
+.main_date .text{
+  text-align: center;
+  color: #000;
+  width: 18rem;
+  flex-grow: 1;
+  background: #fff;
+  padding: 0.5rem 2rem;
+  font-family: "notosans_jp_700", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-weight: 700;
+}
+
+@media screen {
+  .topic_list {
+    width: 55%;
+    margin : -2rem 0 0 auto;
+  }
+}
+
+.topic_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.topic_list .date {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1.6rem 2rem;
+    margin: 0;
+    height: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    border-bottom: 1px solid #212121;
+}
+
+@media screen and (max-width: 1180px) {
+    .topic_list .text:lang(en) {
+        font-size: 1.6rem;
+    }
+}
+
+.topic_list .text {
+    min-height: 18.7rem;
+}
+
+.topic_list .text {
+    font-family: "notosans_jp_500", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-weight: 500;
+    padding: 2.5rem 2rem;
+    height: calc(100% - 6rem);
+}
+
+.topic_list .date, .topic_list .text {
+    width: 100%;
+}
+
+.first_box {
+  width : 320px;
+  height: 250px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.second_box {
+  width : 320px;
+  height: 250px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: blue;
+  background : white;
+}
+
+.third_box {
+  width : 320px;
+  height: 250px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: purple;
+  background : white;
+}
+
+.forth_box {
+  width : 320px;
+  height: 250px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+.vote {
+  text-align: center;
+}
+
+#map {
+  position : absolute;
+}
+
+#map .title {
+  text-align: center;
+}
+
+#media {
+  position : absolute;
+  right : 100px;
+}
+
+#media .title {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<title>김대환 홈페이지1</title> 
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#exhibit">To Exhibit</a>
+  <a href="#contact">To Contact</a>
+  <a href="#press">Press</a>
+</div>
+
+<div class = front_page>
+  <div class="welcome">
+    <h1 class="hello"> 
+      <dt>GAME</dt>
+      <dt>SHOW</dt>
+      <dt>2024</dt>
+    </h1>
+    <dl class = "main_date">
+      <dt class = "title">Business Day</dt>
+      <dt class = "text">August 1 (Thu.) ~ 2 (Fri.)</dt>
+    </dl>
+    <dl class = "main_date">
+      <dt class = "title">Public Day</dt>
+      <dt class = "text">August 3 (Sat.) ~ 4 (Sun.)</dt>
+    </dl>
+  </div>
+  
+  <ul class = "topic_list">
+    <li class="first_box">
+      
+    </li>
+    
+    <li class="second_box">
+      <div class = "date">
+        "May 15, 2024"
+      </div>
+      <div class = "text">
+        "PlaceHolder!"
+      </div>
+    </li>
+    
+    <li class="third_box">
+      <div class = "date">
+        "June 21, 2024"
+      </div>
+      <div class = "text">
+        "PlaceHolder!"
+      </div>
+    </li>
+    
+    <li class="forth_box">
+      
+    </li>
+
+  </ul>
+    
+  </div>
+
+  <div class = "vote">
+    <h1>참여의향자 설문조사</h1>
+    <form action="/action_page.php">
+      <p>행사에 대해 알게된 경위를 선택해주세요.</p>
+      <input type = "radio" id = "news" naem="fav_com" value="NEWS">
+      <label for = "NEWS">뉴스</label><br><br>
+      <input type = "radio" id = "sns" naem="fav_com" value="SNS">
+      <label for = "SNS">SNS</label><br><br>
+      <input type = "radio" id = "adver" naem="fav_com" value="ADVER">
+      <label for = "ADVER">광고</label><br><br>
+      <input type = "radio" id = "etc" naem="fav_com" value="ETC">
+      <label for = "ETC">기타</label><br><br>
+  
+      <p>관심있는 행사를 선택해주세요.</p>
+      <input type = "radio" id = "gear" naem="fav_show" value="GEAR">
+      <label for = "GEAR">최신 기기 소개 및 시연</label><br><br>
+      <input type = "radio" id = "debut" naem="fav_show" value="DEBUT">
+      <label for = "DEBUT">신작 발표회</label><br><br>
+      <input type = "radio" id = "league" naem="fav_show" value="LEAGUE">
+      <label for = "LEAGUE">E스포츠 대회</label><br><br>
+      <input type = "radio" id = "etc" naem="fav_com" value="ETC">
+      <label for = "ETC">기타</label><br><br>
+  
+      <label for="fname">이름 : </label><input type="text" id="fname" name="fname">&nbsp;&nbsp;&nbsp;&nbsp;
+      <label for="tel">연락처 : </label><input type="text" id="tel" name="tel">&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="submit" value="제출">&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="reset" value="초기화">
+    </form>
+  </div>
+    
+
+
+  <!-- 지도 -->
+  <p id = "map">
+    <h2 class="map_title">Contact</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8401964697837!2d127.05657607640403!3d37.5116870272704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca536e4738c97%3A0x336c7537649c9fe4!2sCOEX%20Convention%20%26%20Exhibition%20Center!5e0!3m2!1sen!2sus!4v1719509129988!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </p>
+  <!-- 유튜브 -->
+   <p id = "media">
+    <h2 class="media_title">Introduction</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KIfLA9lerqc?si=Anr9T-bCOFMt24vj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </p>
+</body>
+</html>

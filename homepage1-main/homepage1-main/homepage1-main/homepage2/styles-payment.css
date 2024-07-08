@@ -25,19 +25,6 @@ body {
   margin-left: 1em;
 }
 
-.logo {
-  display: flex;
-  float: right;
-  color: darkblue;
-}
-
-.logo img{
-  height: 30px;
-  background: white;
-  display : block;
-  margin : 0 auto;
-}
-
 ul{
   list-style: none;
 }

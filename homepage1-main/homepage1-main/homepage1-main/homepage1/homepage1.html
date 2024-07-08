@@ -2,7 +2,189 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style1.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://img.freepik.com/free-vector/prickly-juniper-branch-beige-gray-minimal-background_53876-113047.jpg?w=1380&t=st=1719654384~exp=1719654984~hmac=dafb56c30f1a21ce82f9643aaa1a0fdc53e92e213f6607bcddf8ef5dafafe9e1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width : 15px;
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid;
+  border-radius: 5px;
+  background: rgb(202, 202, 197);
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 5px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+  font-weight: bold ;
+}
+
+.front_page {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.welcome .hello{
+  font-size: 5em;
+}
+
+.main_date .title{
+  text-align: center;
+  color: #fff;
+  width: 18rem;
+  background: #000;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  font-family: "notosans_jp_700", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-weight: 700;
+}
+
+.main_date .text{
+  text-align: center;
+  color: #000;
+  width: 18rem;
+  flex-grow: 1;
+  background: #fff;
+  padding: 0.5rem 2rem;
+  font-family: "notosans_jp_700", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-weight: 700;
+}
+
+@media screen {
+  .topic_list {
+    width: 55%;
+    margin : -2rem 0 0 auto;
+  }
+}
+
+.topic_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.topic_list .date {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1.6rem 2rem;
+    margin: 0;
+    height: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    border-bottom: 1px solid #212121;
+}
+
+@media screen and (max-width: 1180px) {
+    .topic_list .text:lang(en) {
+        font-size: 1.6rem;
+    }
+}
+
+.topic_list .text {
+    min-height: 18.7rem;
+}
+
+.topic_list .text {
+    font-family: "notosans_jp_500", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-weight: 500;
+    padding: 2.5rem 2rem;
+    height: calc(100% - 6rem);
+}
+
+.topic_list .date, .topic_list .text {
+    width: 100%;
+}
+
+.first_box {
+  width : 320px;
+  height: 250px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.second_box {
+  width : 320px;
+  height: 250px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: blue;
+  background : white;
+}
+
+.third_box {
+  width : 320px;
+  height: 250px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: purple;
+  background : white;
+}
+
+.forth_box {
+  width : 320px;
+  height: 250px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+.vote {
+  text-align: center;
+}
+
+#map {
+  position : absolute;
+}
+
+#map .title {
+  text-align: center;
+}
+
+#media {
+  position : absolute;
+  right : 100px;
+}
+
+#media .title {
+  text-align: center;
+}
+</style>
 </head>
 <body>
 <title>김대환 홈페이지1</title> 
@@ -32,239 +214,77 @@
   </div>
   
   <ul class = "topic_list">
-    <div class="first_box">
-      <div class="first_box_image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjbWOB-OPTUFM4vMi_XiiTG6qeEN8ibUMiCA&s" width="320" height="250">
-      </div>
-    </div>
+    <li class="first_box">
+      
+    </li>
     
-    <!--<li class="second_box">
+    <li class="second_box">
       <div class = "date">
         "May 15, 2024"
       </div>
       <div class = "text">
         "PlaceHolder!"
       </div>
-    </li>-->
+    </li>
     
-    <!--<li class="third_box">
+    <li class="third_box">
       <div class = "date">
         "June 21, 2024"
       </div>
       <div class = "text">
         "PlaceHolder!"
       </div>
-    </li>-->
+    </li>
     
-    <!--<li class="forth_box">
+    <li class="forth_box">
       
-    </li>-->
+    </li>
 
   </ul>
-
-  <div class="second_box">
-    <div class = "second_box_image">
-      <img src = "https://imageresizer.static9.net.au/y1Y94w_D56BIPrMGwtVXYogoF0U=/750x422/https%3A%2F%2Fprod.static9.net.au%2Ffs%2F65b6bcf1-1397-4af4-9aca-8c6dc210ebc7" width="320" height="250">
-    </div>
-    <!--<div class = "date">
-      "May 15, 2024"
-    </div>
-    <div class = "text">
-      "PlaceHolder!"
-    </div>-->
-  </div>
     
   </div>
 
-  <table class = "board">
-    <tr>
-      <th><strong>공지사항</strong></th>
-      <th><strong>이벤트</strong></th>
-      <th><strong>FAQ</strong></th>
-      <th><strong>언론보도</strong></th>
-    </tr>
-    <tr>
-      <td>[공지사항]행사 전 주의사항 관련 안내드립니다.</td>
-    </tr>
-    <tr>
-      <td>[공지사항]행사 당일 교통수단 관련 안내드립니다.</td>
-    </tr>
-    <tr>
-      <td>[공지사항]행사 참여 회사 관련 새 정보 알림드립니다.</td>
-    </tr>
-    <tr>
-      <td>[공지사항]행사 당일 유사 시 대피 관련 안내드립니다.</td>
-    </tr>
-    <tr>
-      <td>[공지사항]행사 일정에 새소식을 추가했습니다.</td>
-    </tr>
-  </table>
-
-  <div class ="thanks">
-      <img src = "https://img.freepik.com/premium-vector/thank-you-your-time_257845-4065.jpg?w=740" width="620">
-  </div>
-  <!-- 게시판 구역-->
-  <!--<div class = "board_wrap">
-    <div class = "board_title">
-    <table>
-      <div class = "board_block_an" id = "announcement">
-        <Strong>공지사항</Strong>
-      </div>
-      <div class = "board_block" id = "event">
-        <Strong>이벤트</Strong>
-      </div>
-      <div class = "board_block" id = "faq">
-        <Strong>FAQ</Strong>
-      </div>
-      <div class = "board_block" id = "news">
-        <Strong>언론보도</Strong>
-      </div>
-      <div class = "board_list1"><a href = "#">[공지사항]행사 전 주의사항 관련 안내드립니다.</a></div><br>
-      <div class = "board_list2"><a href = "#">[공지사항]행사 당일 교통수단 관련 안내드립니다.</a></div><br>
-      <div class = "board_list3"><a href = "#">[공지사항]참여 회사 관련 새 정보 알림드립니다.</a></div><br>
-      <div class = "board_list4"><a href = "#">[공지사항]행사 당일 유사 시 대피 관련 안내드립니다.</a></div><br>
-      <div class = "board_list5"><a href = "#">[공지사항]행사 일정에 새소식을 추가했습니다.</a></div>
-    </table>
-    </div>
-  </div>-->
-
-  <!-- 설문조사 부분 -->
-  <form id = "survey-form">
-    <h2 id = "survey-title">참가자 설문조사</h2>
-    <div class="form-control">
-      <label for="name" id="label-name">
-        성함을 알려주세요.
-      </label><br>
-      <input type = "text" id = "name" placeholder="홍길동"><br><br>
-    </div>
-
-    <div class="form-control">
-      <label for="email" id="label-email">
-        이메일을 알려주세요.
-      </label><br>
-      <input type = "email" id = "email" placeholder="example@example.com"><br><br>
-    </div>
-
-    <div class="form-control">
-      <label for="gender" id="label-gender">
-        성별을 알려주세요
-      </label><br>
-      <select name="gender" id="gender">
-        <option value="male">남자</option>
-        <option value="female">여자</option>
-        <option value="other">무응답</option>
-      </select>
-    </div>
-
-    <div class="form-control">
-      <label for="age" id="label-age">
-        연령대를 알려주세요.
-      </label><br>
-      <select name="age" id="age">
-        <option value="baby">0~19</option>
-        <option value="tweenty">20~24</option>
-        <option value="high_tweenty">25~29</option>
-        <option value="thirty">30~34</option>
-        <option value="high_thirty">35+</option>
-        <option value="other">무응답</option>
-      </select>
-    </div>
-    <br>
-    <div class="form-control">
-      <label id="label-attendance">
-        행사에 참여하실 의향이 있으신가요?
-      </label>
-      <label for="attend-1" id="label-attend-1">
-        <input type="radio" id="attend-1" name="attend">
-          네
-        </input>
-      </label>
-      <label for="attend-2" id="label-attend-2">
-        <input type="radio" id="attend-2" name="attend">
-          아니요
-        </input>
-      </label>
-      <label for="attend-3" id="label-attend-3">
-        <input type="radio" id="attend-3" name="attend">
-          모르겠음
-        </input>
-      </label>
-    </div><br>
-
-    <div class="form-control">
-      <label>가장 기대되는 프로그램은 무엇인가요? (중복 응답 가능)</label>
-      <br>
-      <label for="inp-1">
-        <input type="checkbox" name="inp">신작 발표회</input>
-      </label>
-      <br>
-      <label for="inp-2">
-        <input type="checkbox" name="inp">차세대 기기 발표회</input>
-      </label>
-      <br>
-      <label for="inp-3">
-        <input type="checkbox" name="inp">E스포츠 대회</input>
-      </label>
-      <br>
-      <label for="inp-4">
-        <input type="checkbox" name="inp">체험관</input>
-      </label>
-      <br>
-      <label for="inp-5">
-        <input type="checkbox" name="inp">기타</input>
-      </label>
-    </div><br>
-
-    <div class="form-control">
-      <label for="comments">
-        건의사항 및 남기고 싶으신 말씀
-      </label>
-      <br>
-      <textarea name="comments" id="comments" placeholder="여기에 입력해주세요.">
-      </textarea>
-    </div>
-
-    <br>
-    
-    <button type="submit" value="submit" id="submit">
-      제출
-    </button>
-
-    <button type="reset" value="reset" id="reset">
-      초기화
-    </button>
-
-  </form>
+  <div class = "vote">
+    <h1>참여의향자 설문조사</h1>
+    <form action="/action_page.php">
+      <p>행사에 대해 알게된 경위를 선택해주세요.</p>
+      <input type = "radio" id = "news" naem="fav_com" value="NEWS">
+      <label for = "NEWS">뉴스</label><br><br>
+      <input type = "radio" id = "sns" naem="fav_com" value="SNS">
+      <label for = "SNS">SNS</label><br><br>
+      <input type = "radio" id = "adver" naem="fav_com" value="ADVER">
+      <label for = "ADVER">광고</label><br><br>
+      <input type = "radio" id = "etc" naem="fav_com" value="ETC">
+      <label for = "ETC">기타</label><br><br>
   
-  <div class = "contact">
-  <!-- 지도 -->
-    <div class = "map">
-      <h2 class="map_title">오시는 길</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8401964697837!2d127.05657607640403!3d37.5116870272704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca536e4738c97%3A0x336c7537649c9fe4!2sCOEX%20Convention%20%26%20Exhibition%20Center!5e0!3m2!1sen!2sus!4v1719509129988!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="content">
-      <div class = "col-1">
-        <div class = "address-line">
-          <img alt="location" src = "https://freeiconshop.com/wp-content/uploads/edd/phone-outline.png" class = "icon" width="50" height="50">
-          <div class = "contact-info">
-            <div class = "contact-info-title">전화번호</div>
-            <div>0123-4567-8910</div>
-          </div>
-        </div>
-        <div class = "address-line">
-          <img alt="location" src = "https://cdn-icons-png.flaticon.com/512/561/561127.png" class = "icon" width="50" height="50">
-          <div class = "contact-info">
-            <div class= "contact-info-title">이메일</div>
-            <div>hello@game.com</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!-- 유튜브 -->
-    <div class = "media">
-      <h2 class="media_title">행사 개관</h2>
-      <iframe width="600" height="450" src="https://www.youtube.com/embed/KIfLA9lerqc?si=Anr9T-bCOFMt24vj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+      <p>관심있는 행사를 선택해주세요.</p>
+      <input type = "radio" id = "gear" naem="fav_show" value="GEAR">
+      <label for = "GEAR">최신 기기 소개 및 시연</label><br><br>
+      <input type = "radio" id = "debut" naem="fav_show" value="DEBUT">
+      <label for = "DEBUT">신작 발표회</label><br><br>
+      <input type = "radio" id = "league" naem="fav_show" value="LEAGUE">
+      <label for = "LEAGUE">E스포츠 대회</label><br><br>
+      <input type = "radio" id = "etc" naem="fav_com" value="ETC">
+      <label for = "ETC">기타</label><br><br>
+  
+      <label for="fname">이름 : </label><input type="text" id="fname" name="fname">&nbsp;&nbsp;&nbsp;&nbsp;
+      <label for="tel">연락처 : </label><input type="text" id="tel" name="tel">&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="submit" value="제출">&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="reset" value="초기화">
+    </form>
   </div>
+    
+
+
+  <!-- 지도 -->
+  <p id = "map">
+    <h2 class="map_title">Contact</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8401964697837!2d127.05657607640403!3d37.5116870272704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca536e4738c97%3A0x336c7537649c9fe4!2sCOEX%20Convention%20%26%20Exhibition%20Center!5e0!3m2!1sen!2sus!4v1719509129988!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </p>
+  <!-- 유튜브 -->
+   <p id = "media">
+    <h2 class="media_title">Introduction</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KIfLA9lerqc?si=Anr9T-bCOFMt24vj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </p>
 </body>
 </html>
